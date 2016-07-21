@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Intro to HTML and CSS</title>
+
+		<meta name="description" content="A presentation for the Arlington Public Library on an introduction to HTML and CSS">
+		<meta name="author" content="Jessica Bell">
+
+		<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+		<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			<section>
+				<section>
+					<h1>Intro to Web Development</h1>
+					<h3>HTML and CSS</h3>
+					<p>
+						<small>Created by <a href="http://sirjessthebrave.github.io/">Jessica Bell</a> / <a href="http://twitter.com/sirjessthebrave">@SirJessTheBrave</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>Who Am I?</li>
+						<li>Who are you?</li>
+						<li>World Wide Web and the Internet Overview</li>
+						<li>What is Web Development?</li>
+						<li>Front end vs Back end programming</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>A Note on Hosting and Domains</li>
+						<li>Make your first page with GitHub</li>
+						<li>QA Time</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Who Am I?</h2>
+					<ul>
+						<li>Jessica Bell</li>
+						<li>Web Developer at Deloitte Digital</li>
+						<li>Self taught: Degree in International Relations, General Assembly Bootcamp for Front End Web Development</li>
+						<li>Community Leadership: DC FemTech, DC Tech Meetup</li>
+						<li>GitHub: SirJessTheBrave</li>
+						<li>Twitter: @sirJessTheBrave</li>
+					</ul>
+				</section>
+				<section>
+					<div>Spirit Animal</div>
+					<img src="http://i34.photobucket.com/albums/d122/mydog5/Not%20Desu/madonna-vogue-kid-dancing-gif.gif">
+				</section>
+
+				<section>
+					<h2>Who Are You?</h2>
+					<ul>
+						<li>Name</li>
+						<li>Occupation/grade/thing that occupies most of your time</li>
+						<li>Why you are hear and what you want to learn</li>
+						<li>What is your Spirit Animal/persona/thing you love</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Lets Go!</h2>
+					<img src="https://media.giphy.com/media/eoxomXXVL2S0E/giphy.gif">
+				</section>
+			</section>
+				<!-- Example of nested vertical slides -->
+			<section>
+				<section>
+					<h2>The Internet and the World Wide Web </h2>
+					<img src="http://img.pandawhale.com/post-17148-to-the-internet-gif-squirrel-p-0aX9.gif">
+				</section>
+
+				<section>
+					<h2>The Internet</h2>
+					<p>Network of networks that connects millions of computers and servers gobally.</p>
+					<p>Information is passed around to connected computers via a veriety of languages called protocols for example HTTP (Hyper Text Transfer Protocol) or FTP(File Transfer Protocol).</p>
+				</section>
+
+				<section>
+					<h2>The World Wide Web</h2>
+					<p>A way of accessing information from the internet. The WWW is a portion of the Internet. The WWW uses protocols called HTTP or Hyper Text Transfer Protocols.  HTTP allows not only the transfer of data, but also the ability to communicate buiness logic/functionality.  Common HTTP protocols are: Get, Post, Delete, and more.</p>
+				</section>
+
+				<section data-background="https://raw.githubusercontent.com/site2site/site2site.github.io/master/images/lectures/client-server-model/client-server-2.gif">
+				</section>
+
+				<section>
+					<h2>Audience Participation Time</h2>
+					<p>What do you think each of the HTTP protocols do? (Get Post, Delete?</p>
+					<img src="http://www.cbc.ca/mrd/content/images/6-hands-up.gif">
+				</section>
+
+				<section>
+					<h2>What is Web Development?</h2>
+					<p>Web Development is the action of creating code that is hosted and connected to the Internet/World Wide Web. Making websites, web apps, web services, or any other peice of functionality that lives on a server connected to the web would be considered web development.</p>
+					<p>Web Development often falls into two categories:</p>
+					<ul>
+						<li class="fragment">Front End Development</li>
+						<li class="fragment">Back End Development</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Front End Web Development</h2>
+					<p>
+						<strong>Front End Web Development</strong> refers to <em>Client Side</em> code, or code that <em>clients</em> (users) interact with.  For Example: The construction of as well as look and feel of a web page or application.
+					</p>
+				</section>
+
+				<section>
+					<h2>Back End Web Development</h2>
+					<p>
+						<strong>Back End Web Development</strong> is the creation of code that lives on a server which runs the logic/processes of the web page or application. This refers to <em>Server Side </em> code, or code that the <em>server</em> runs.  For Example: If you site has users, the back end code processes and stores user data which is created, updated, or deleted and retured to the client/front end of your site or application
+					</p>
+				</section>
+
+				<section>
+					<h2>Poll the Audience</h2>
+					<p>Can you give me some examples of what front end and back end development could be?</p>
+					<img src="https://media.giphy.com/media/yMj8ZO9U2isrS/giphy.gif">
+				</section>
+
+				<section>
+					<h2>Languages</h2>
+					<p> The primary languages of front end web development are HTML, CSS, and JavaScript.</p>
+					<p>There are many backend languages including JavaScript, Java, Python, PHP, C#, C++, .NET, Ruby, C and more!</p>
+				</section>
+			</section>
+
+			<section><!--  HTML -->
+				<section>
+					<h2>HTML</h2>
+					<p>HTML stands for Hyper Text Markup Language</p>
+					<img src="https://cms-assets.tutsplus.com/uploads/users/390/posts/22185/image/close-tag2.gif">
+				</section>
+
+				<section>
+					<p>We use HTML to create the structure of our web pages and tell the browser how to display our text, images, forms and more!</p>
+				</section>
+
+				<section>
+					<h2>HTML Vocab</h2>
+					<ul>
+						<li class="fragement">Element</li>
+						<li><pre><code class="hljs" data-trim contenteditable><div></div></code></pre></li>
+						<li class="fragement">Attribute</li>
+						<li><pre><code class="hljs" data-trim contenteditable><div style="color:blue;"></div></code></pre></li>
+						<li class="fragement">Class</li>
+						<li><pre><code class="hljs" data-trim contenteditable><div class="blue-section" style="color:blue;"></div></code></pre></li>
+						<li class="fragement">ID</li>
+						<li><pre><code class="hljs" data-trim contenteditable><div id="this-one-blue-section" class="blue-section" style="color:blue;"></div></code></pre></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Major Elements of an HTML Page</h2>
+					<ul>
+						<li class="fragement">Doctype</li>
+						<li class="fragement">HTML</li>
+						<li class="fragement">Head</li>
+						<li class="fragement">Body</li>
+						<li class="fragement">Header, Footer, Section</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Call Out What You See!</h2>
+					<img src="img/html-1.png">
+				</section>
+
+				<section>
+					<h2>Code Along: Setting up our page and adding attributes</h2>
+				</section>
+
+				<section>
+					<h2>Major HTML Elements in Code</h2>
+					<img src="img/html-2.png">
+				</section>
+
+				<section>
+					<h2>Major HTML Elements Rendered</h2>
+					<img src="img/html-3.png" height="600px">
+				</section>
+
+				<section>
+					<h2>HTML Forms</h2>
+					<p>HTML forms are a way to collect infromation from a user.  Once the information is input from the user, it can be saved on a server with the help of a back end program or JavaScript.</p>
+					<img src="img/html-4.png">
+				</section>
+
+				<section>
+					<h2>Good Intro to HTML Resources</h2>
+					<ul>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Introduction">MDN Guide</a></li>
+						<li><a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/p/html-basics">Khan Academy</a></li>
+						<li><a href="https://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1">Code Academy</a></li>
+						<li><a href="http://www.htmlandcssbook.com/">HTML and CSS Book</a></li>
+					</ul>
+				</section>
+				
+			</section><!--  HTML -->
+
+			<section><!--  CSS -->
+				<section>
+					<h2>CSS</h2>
+					<p>CSS stands for Cascading Style Sheets</p>
+				</section>
+			</section><!--  CSS -->
+
+			<section><!--  Hosting -->
+				<section>
+					<h2>Hosting and Domains</h2>
+					<p>To host a website, you need a hosting service and a domain.  Hosting services are the purchasing of space on a server.  Your Domain name is the URL that users can go to view what is hosted on your server. </p>
+				</section>
+			</section><!--  Hosting -->
+
+			<section><!--  Github -->
+				<section>
+					<h2>Hosting your first page with GitHub</h2>
+				</section>
+
+				<section>
+					<h2>What is Git?</h2>
+				</section>
+
+				<section>
+					<h2>What is GitHub?</h2>
+				</section>
+
+				<section>
+					<h2>Getting Started</h2>
+					<ul>
+						<li><a href="www.github.io">Create a free GitHub Account</a></li>
+						<li>Create your first Repository on GitHub</li>
+						<li>"Clone" your new repository onto your local machine</li>
+						<li>CODE!!</li>
+						<li>Using either your command line or a GitHub GUI (SourceTree is my reccomended one) "Push" your code to your online GitHub Account</li>
+						<li>Create a "Branch" and name is gh-pages on GitHub</li>
+						<li>Look in your repository settings to find the URL of your newly published site!</li>
+						<li>Profit!</li>
+					</ul>
+				</section>
+			</section><!--  Github -->
+
+			<section><!--  QA -->
+				<h2>Stop! Question-time!</h2>
+			</section><!--  QA -->
+
+			<section>
+				<h2>Fin</h2>
+				<small>><a href="www.twitter.com/sirjessthebrave">@sirJessTheBrave</a> | <a href="https://github.com/sirjessthebrave">GitHub: SirJessTheBrave</a></small>
+			</section>
+
+
+
+<!-- ############################### -->
+				<section>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+						<p class="fragment current-visible">current-visible</p>
+						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+					</section>
+				</section>
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
