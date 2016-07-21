@@ -171,6 +171,17 @@
 					<p>We use HTML to create the structure of our web pages and tell the browser how to display our text, images, forms and more!</p>
 				</section>
 
+        <section>
+          <h2>Major Elements of an HTML Page</h2>
+          <ul>
+            <li class="fragement">Doctype</li>
+            <li class="fragement">HTML</li>
+            <li class="fragement">Head</li>
+            <li class="fragement">Body</li>
+            <li class="fragement">Header, Footer, Section</li>
+          </ul>
+        </section>
+
 				<section>
 					<h2>HTML Vocab</h2>
 					<ul>
@@ -186,23 +197,13 @@
 				</section>
 
 				<section>
-					<h2>Major Elements of an HTML Page</h2>
-					<ul>
-						<li class="fragement">Doctype</li>
-						<li class="fragement">HTML</li>
-						<li class="fragement">Head</li>
-						<li class="fragement">Body</li>
-						<li class="fragement">Header, Footer, Section</li>
-					</ul>
-				</section>
-
-				<section>
 					<h2>Call Out What You See!</h2>
-					<img src="img/html-1.png">
+					<img src="img/html-1.png" style="width: 80%;">
 				</section>
 
 				<section>
 					<h2>Code Along: Setting up our page and adding attributes</h2>
+          <div><a href="https://css-tricks.com/what-beautiful-html-code-looks-like/">What Beautiful HTML Looks Like</a></div>
 				</section>
 
 				<section>
@@ -214,6 +215,18 @@
 					<h2>Major HTML Elements Rendered</h2>
 					<img src="img/html-3.png" height="600px">
 				</section>
+
+        <section>
+          <h2>A note on formatting and commenting</h2>
+          <h3>Well formatted code is a developers best friend</h3>
+        </section>
+
+        <section>
+          <h2>Inline vs Block Elements</h2>
+          <div>
+            <img src="img/block-inline.png">
+          </div>
+        </section>
 
 				<section>
 					<h2>HTML Forms</h2>
@@ -228,6 +241,7 @@
 						<li><a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/p/html-basics">Khan Academy</a></li>
 						<li><a href="https://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1">Code Academy</a></li>
 						<li><a href="http://www.htmlandcssbook.com/">HTML and CSS Book</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN list of HTML Elements</a></li>
 					</ul>
 				</section>
 				
@@ -237,7 +251,81 @@
 				<section>
 					<h2>CSS</h2>
 					<p>CSS stands for Cascading Style Sheets</p>
+          <img src="img/css.gif">
 				</section>
+
+        <section>
+          <h2>CSS controls the look and feel of your site</h2>
+          <p>Using an exterally linked peice of code you can change the colors, fonts, some layout, and whitespace of your site! Lets see what some sites look like without CSS.</p>
+        </section>
+
+        <section>
+          <h2>Classes</h2>
+          <p>Classes are elements you can include in your HTML to reference in CSS to apply styles to those elements. You can reuse classes over and over again.</p>
+          <ul>
+            <li class="fragement">Class</li>
+            <li><pre><code class="hljs" data-trim contenteditable><div class="blue-section"></div></code></pre></li>
+            <li><pre><code class="hljs" data-trim contenteditable>
+            //reference classes 
+            with a period before 
+            .blue-section {
+              background: blue;
+            }
+            </code></pre></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Id's</h2>
+          <p>ID/s are also elements you can include in your HTML to reference in CSS to apply styles to those elements, however you can only use ID's ONCE.</p>
+          <ul>
+            <li class="fragement">ID</li>
+            <li><pre><code class="hljs" data-trim contenteditable><div id="this-one-blue-section"></div></code></pre></li>
+            <li><pre><code class="hljs" data-trim contenteditable>
+            //reference classes 
+            with a hash before 
+            #blue-section {
+              background: blue;
+            }
+            </code></pre></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Making space</h2>
+          <p>Padding and Margin are ways to add space around your html elements. Padding adds space from the outside of an element and pushes items in, Margin adds space around the outside of your element and pushes out.</p>
+        </section>
+
+        <section>
+          <h2>The Box Model</h2>
+          <img src="img/box-model.gif">
+        </section>
+
+        <section>
+          <h2>Including our CSS</h2>
+          <p>You can write your CSS inline, but try not to! Instead link a styleshee.css in the head of your HTML</p>
+          <pre><code class="hljs" data-trim contenteditable>
+            <link rel="stylesheet" href="css/style.css">
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Cascading</h2>
+          <p>The styles in your 'Cascading Style Sheets' are exactly that - cascading.  That means that there is a heierarchy of which styles take precidence. The styles on the bottom will take precidence to the ones that come before</p>
+          <p>However - if your styles are more specific they will override anything else!</p>
+        </section>
+
+        <section>
+          <h2>Lets try it out!</h2>
+        </section>
+
+        <section>
+          <h2>CSS Resources</h2>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/Learn/CSS">MDN Learn CSS</a></li>
+            <li><a href="https://www.codecademy.com/learn/web">Code Academy Learn HTML and CSS</a></li>
+          </ul>
+        </section>
 			</section><!--  CSS -->
 
 			<section><!--  Hosting -->

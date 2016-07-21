@@ -1,0 +1,84 @@
+/*global*/
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  background: linear-gradient( #ACA0DE, #B2B1B7);
+  height: 100vh;
+}
+
+/*typography*/
+
+h1 {
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 60px;
+  margin: 0;
+}
+h2 {
+  font-style: italic;
+  margin: 0;
+}
+
+nav {
+  background-color: #ACA0DE;
+  border-bottom: solid 1px #414042;
+  box-shadow: 0 0 1em #414042;
+
+}
+.nav-list-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+.nav-list {
+  list-style: none;
+}
+
+.nav-list-item {
+  display: inline-block;
+  float: left;
+  padding: 1em;
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 20px;
+  color: #414042;
+  text-align: center;
+}
+.bio-wrapper {
+  margin-top: 1em;
+}
+.bio-img-wrapper {
+  width: 30%;
+  float: left;
+}
+.bio-img-wrapper img {
+  width: 100%;
+  margin: 1em;
+  box-sizing: border-box;
+  box-shadow: 0 0 1em #414042;
+}
+
+.bio-info-wrapper, 
+.text-wrapper {
+  width: 68%;
+  float: left;
+  padding-left: 3em;
+  box-sizing: border-box;
+}
+
+.copyright {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-top: solid 1px #414042;
+  box-shadow: 0 0 1em #414042;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  padding-top: 3em;
+}
