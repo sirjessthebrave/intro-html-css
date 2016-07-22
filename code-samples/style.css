@@ -11,7 +11,7 @@ body {
   font-weight: 300;
   margin: 0;
   background: linear-gradient( #ACA0DE, #B2B1B7);
-  height: 100vh;
+  
 }
 
 /*typography*/
@@ -77,8 +77,8 @@ nav {
   text-align: center;
   border-top: solid 1px #414042;
   box-shadow: 0 0 1em #414042;
-  position: absolute;
+ /* position: absolute;*/
   bottom: 0;
-  height: 50px;
-  padding-top: 3em;
+  height: 40px;
+  padding-top: 2em;
 }
